@@ -32,7 +32,7 @@ function displayEmailResult(result){
 
     if(result.message == "Your email is secure"){
       rsdiv.innerHTML = "";
-      msgdiv.innerHTML = `<div class="alert-success alert-dismissible" align="center">
+      msgdiv.innerHTML = `<div class="alert-success alert-dismissible" align="center" style="font-style: serif;font-family: italic;font-size:40px;">
                         <button type="button" class="close" data-dismiss="alert" aria-label="close"><spam aria-hidden="true">&times;</spam></button>\
                         <strong> Good news — no pwnage found...!</strong>
                         </div>
@@ -40,7 +40,7 @@ function displayEmailResult(result){
   }
   else
   {
-  msgdiv.innerHTML = `<div class="alert alert-danger alert-dismissible" role="alert" align="center">
+  msgdiv.innerHTML = `<div class="alert alert-danger alert-dismissible" role="alert" align="center" style="font-style: serif;font-family: italic;font-size:40px;">
                         <button type="button" class="close" data-dismiss="alert" aria-label="close"><spam aria-hidden="true">&times;</spam></button>\
                         <strong>Oh no - Hacked...!</strong>
                         </div>`;
