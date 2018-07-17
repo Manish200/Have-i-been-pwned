@@ -1,13 +1,17 @@
 html,body{
-  margin: 27px;
-    background: ;
+
+    margin: 15px;
+    background:#1E88E5;
 }
+
 #contact{
+
   font-size: 65px;
   font-style: italic;
   font-family: serif;
   background: #004D40;
-  margin-top: 60px;
+
+  margin-top: 55px;
 }
 #top{
   background: #1A237E;
@@ -27,7 +31,8 @@ html,body{
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #2979FF;
+    background:
+#C2185B;
     border-radius: 10px;
 }
 
@@ -38,6 +43,7 @@ html,body{
 footer{
   color: #FFFFFF;
   background: #000000;
+  margin: 0px;
 }
 
 .dataclasses {

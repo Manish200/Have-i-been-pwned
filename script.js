@@ -32,17 +32,17 @@ function displayEmailResult(result){
 
     if(result.message == "Your email is secure"){
       rsdiv.innerHTML = "";
-      msgdiv.innerHTML = `<div class="alert-success alert-dismissible">
-                        <button type="button" class="close"data-dismiss="alert" aria-label="close"><spam aria-hidden="true">&time;</spam></button>\
-                        <strong> Good News...!</strong> sjsxsxhsxjsjxs  xjn j
+      msgdiv.innerHTML = `<div class="alert-success alert-dismissible" align="center">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="close"><spam aria-hidden="true">&times;</spam></button>\
+                        <strong> Good news — no pwnage found...!</strong>
                         </div>
                         `;
   }
-  else 
+  else
   {
-  msgdiv.innerHTML = `<div class="alert alert-danger alert-dismissible" role="alert">
+  msgdiv.innerHTML = `<div class="alert alert-danger alert-dismissible" role="alert" align="center">
                         <button type="button" class="close" data-dismiss="alert" aria-label="close"><spam aria-hidden="true">&times;</spam></button>\
-                        <strong>Hacked...!</strong>
+                        <strong>Oh no - Hacked...!</strong>
                         </div>`;
   rsdiv.innerHTML = "";
   //counter
@@ -50,7 +50,7 @@ function displayEmailResult(result){
         //loop through all the objects in result
         result.forEach(function(currentResult) {
             var hackedHTMLDiv = $(`
-            <div class="jumbotron">
+            <div class="jumbotron" style="background:#000;padding:10px;">
                 <div class="row">
                     <div class="col-xs-12 col-sm-4">
                         <h5>${currentResult.Title}: <small><a target="_blank" href="${currentResult.Domain}">website</a></small></h5>

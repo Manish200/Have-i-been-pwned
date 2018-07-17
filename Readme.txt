@@ -3,8 +3,7 @@
   I have requested api from that site for doing this project. This    project helps in checking if you have an account that has been      compromised in a data breach. Like your email address etc.
 
 
-  In this project i have created a local node server which is named
-  as index.js . 
+  In this project i have created a local node server whichisnamedas index.js . 
 
    # Running and installing.
   
